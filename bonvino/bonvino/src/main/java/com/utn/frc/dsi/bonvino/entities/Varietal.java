@@ -19,8 +19,10 @@ public class Varietal {
     private String descripcion;
     @Column(name = "porcentajeComposicion")
     private String porcentajeComposicion;
+
     @OneToOne
-    private TipoUva idTipoUva;
-    @ManyToMany
+    private TipoUva tipoUva;
+
+    @ManyToMany(mappedBy = "varietales")
     private List<Vino> vinos;
 }

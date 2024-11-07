@@ -23,6 +23,6 @@ public class NovedadEvento {
     private Date fechaHoraEvento;
     private String nombreEvento;
 
-    @ManyToMany
+    @ManyToMany(mappedBy = "novedadEventos")
     private List<Bodega> bodegas;
 }

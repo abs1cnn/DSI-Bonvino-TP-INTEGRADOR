@@ -29,7 +29,9 @@ public class CobroPremium {
     @Column(name = "nroOperacionMercadoPago")
     private String nroOperacionMercadoPago;
 
-    @Column(name = "idUsuario")
-    private Integer idUsuario;
+
+    @ManyToOne
+    @JoinColumn(name = "idUsuario", nullable = false)
+    private Usuario usuario;
 
 }

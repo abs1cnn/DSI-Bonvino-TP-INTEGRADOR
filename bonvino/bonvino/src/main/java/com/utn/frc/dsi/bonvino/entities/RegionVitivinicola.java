@@ -20,10 +20,10 @@ public class RegionVitivinicola {
     private String nombre;
 
     @ManyToOne
-    @JoinColumn(name = "idProvincia")
+    @JoinColumn(name = "idProvincia", nullable = false)
     private Provincia provincia;
 
-    @OneToMany(mappedBy = "idRegionVitivinicola")
+    @OneToMany(mappedBy = "regionVitivinicola")
     private List<Bodega> bodegas;
 
 

@@ -26,17 +26,31 @@ public class Vino {
     private Integer notaDeCataBodega;
     @Column(name = "precioArs")
     private Float precioArs;
+
     @ManyToOne
-    @JoinColumn(name = "idBodega")
-    private Bodega idBodega;
+    @JoinColumn(name = "idVino", nullable = false)
+    private Bodega bodega;
+
     @ManyToMany
-    @JoinColumn(name = "id", referencedColumnName = "id")
+    @JoinTable(
+            name = "VinoXVarietal",
+            joinColumns = @JoinColumn(name = "idVino"),
+            inverseJoinColumns = @JoinColumn(name = "idVarietal")
+    )
     private List<Varietal> varietales;
     @ManyToMany
-    @JoinColumn(name = "id", referencedColumnName = "id")
+    @JoinTable(
+            name = "VinoXMaridaje",
+            joinColumns = @JoinColumn(name = "idVino"),
+            inverseJoinColumns = @JoinColumn(name = "idMaridaje")
+    )
     private List<Maridaje> maridajes;
-    @OneToMany
-    @JoinColumn(name = "id", referencedColumnName = "id")
+
+    @OneToMany(mappedBy = "vino")
     private List<Resenia> resenias;
+
+    @ManyToOne
+    @JoinColumn(name = "idEnofilo", nullable = false)
+    private Enofilo enofilo;
 
 }

@@ -35,16 +35,22 @@ public class Bodega {
     @Column(name = "coordenada")
     private String coordenadas;
 
-    @JsonBackReference
-    @ManyToOne(cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
-    @JoinColumn(name = "idRegionVitivinicola", referencedColumnName = "regionVitivinicola")
+    @ManyToOne
+    @JoinColumn(name = "idRegionVitivinicola", nullable = false)
     private RegionVitivinicola regionVitivinicola;
 
     @OneToMany(mappedBy = "bodega")
-    @Transient
     private List<Vino> vinos;
 
     @ManyToMany
-    private List<NovedadEvento> eventos;
+    @JoinTable(
+            name = "BodegaXEvento",
+            joinColumns = @JoinColumn(name = "idBodega"),
+            inverseJoinColumns = @JoinColumn(name = "idNovedadEvento")
+    )
+    private List<NovedadEvento> novedadEventos;
+
+    @OneToMany(mappedBy = "bodega")
+    private List<Siguiendo> seguidores;
 
 }

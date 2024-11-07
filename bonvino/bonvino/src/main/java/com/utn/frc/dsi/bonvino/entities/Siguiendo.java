@@ -17,12 +17,19 @@ public class Siguiendo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    private Date fechaFin;
+    private Date fechaInicio;
 
     @ManyToOne
-    @JoinColumn(name = "idEnofiloSeguidor")
-    private Enofilo enofiloSeguidor;
+    @JoinColumn(name = "idEnofilo", nullable = false)
+    private Enofilo amigo;
 
     @ManyToOne
-    @JoinColumn(name = "idEnofiloSeguido")
-    private Enofilo enofiloSeguido;
+    @JoinColumn(name = "idBodega", nullable = false)
+    private Bodega bodega;
+
+    @ManyToOne
+    @JoinColumn(name = "idSommelier", nullable = false)
+    private Sommelier sommelier;
+
 }

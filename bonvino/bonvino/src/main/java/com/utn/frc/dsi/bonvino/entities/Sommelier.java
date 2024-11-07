@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.Date;
 import java.util.List;
 
 @NoArgsConstructor
@@ -19,27 +20,21 @@ public class Sommelier {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name = "nombre")
+    private Date fechaValidacion;
+
     private String nombre;
 
-    @Column(name = "apellido")
-    private String apellido;
+    private String notaPresentacion;
 
-    @Column(name = "imagenPerfil")
-    private String imagenPerfil;
-
-    @ManyToOne
-    @JoinColumn(name = "idUsuario")
+    @OneToOne
     private Usuario usuario;
 
     @OneToMany(mappedBy = "sommelier")
     private List<Resenia> resenias;
 
-    @ManyToMany
-    @JoinTable(
-            name = "CertificacionesXSommeliers",
-            joinColumns = @JoinColumn(name = "idSommelier"),
-            inverseJoinColumns = @JoinColumn(name = "idCertificacion")
-    )
+    @OneToMany(mappedBy = "sommelier")
     private List<Certificacion> certificaciones;
+
+    @OneToMany(mappedBy = "sommelier")
+    private List<Siguiendo> seguidores;
 }

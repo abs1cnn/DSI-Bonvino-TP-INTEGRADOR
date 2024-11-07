@@ -36,5 +36,9 @@ public class Certificacion {
     @Column(name = "adjuntoUrl")
     private String adjuntoUrl;
 
+    @ManyToOne
+    @JoinColumn(name = "idSommelier", nullable = false)
+    private Sommelier sommelier;
+
 
 }

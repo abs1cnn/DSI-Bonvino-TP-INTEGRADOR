@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import com.utn.frc.dsi.bonvino.entities.Pais;
 import lombok.*;
 
+import java.util.List;
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
@@ -16,6 +18,9 @@ public class Provincia {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String nombre;
-    @OneToOne
+    @ManyToOne
+    @JoinColumn(name = "idPais", nullable = false)
     private Pais pais;
+    @OneToMany(mappedBy = "provincia")
+    private List<RegionVitivinicola> regionVitivinicolas;
 }

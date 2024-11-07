@@ -3,6 +3,8 @@ package com.utn.frc.dsi.bonvino.entities;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.List;
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
@@ -26,4 +28,12 @@ public class Enofilo {
     @OneToOne
     private Usuario usuario;
 
+    @OneToMany(mappedBy = "amigo")
+    private List<Siguiendo> seguidores;
+
+    @OneToMany(mappedBy = "enofilos")
+    private List<Resenia> resenias;
+
+    @OneToMany(mappedBy = "enofilo")
+    private List<Vino> vinos;
 }

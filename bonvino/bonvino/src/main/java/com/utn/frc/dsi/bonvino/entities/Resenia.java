@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.util.Date;
-import java.util.List;
+
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -30,10 +30,14 @@ public class Resenia {
     private Integer puntaje;
 
     @ManyToOne
-    @JoinColumn(name = "idVinos")
+    @JoinColumn(name = "idVino", nullable = false)
     private Vino vino;
 
     @ManyToOne
-    @JoinColumn(name = "idSommelier")
+    @JoinColumn(name = "IdSommelier", nullable = false)
     private Sommelier sommelier;
+
+    @ManyToOne
+    @JoinColumn(name = "idEnofilo", nullable = false)
+    private Enofilo enofilos;
 }

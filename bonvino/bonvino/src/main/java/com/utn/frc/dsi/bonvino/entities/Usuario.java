@@ -4,6 +4,8 @@ package com.utn.frc.dsi.bonvino.entities;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.List;
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
@@ -17,7 +19,8 @@ public class Usuario {
     private String contrasena;
     private String nombre;
     private Boolean premium;
-    @Transient
-    @OneToOne
-    private CobroPremium cobroPremium;
+
+    @OneToMany(mappedBy = "usuario")
+    private List<CobroPremium> cobroPremium;
+
 }

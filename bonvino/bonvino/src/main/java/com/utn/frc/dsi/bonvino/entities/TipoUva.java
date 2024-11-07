@@ -15,7 +15,5 @@ public class TipoUva {
     private Integer id;
     private String nombre;
     private String descripcion;
-    @Transient
-    @OneToOne
-    private Varietal varietal;
+
 }
