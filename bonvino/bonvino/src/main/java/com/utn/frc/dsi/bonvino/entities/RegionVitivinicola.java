@@ -10,7 +10,7 @@ import java.util.List;
 @Getter
 @Setter
 @Entity
-@Table(name = "RegionVitinicolas")
+@Table(name = "RegionVitivinicolas")
 public class RegionVitivinicola {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,7 +23,7 @@ public class RegionVitivinicola {
     @JoinColumn(name = "idProvincia")
     private Provincia provincia;
 
-    @OneToMany(mappedBy = "regionVinicola")
+    @OneToMany(mappedBy = "idRegionVitivinicola")
     private List<Bodega> bodegas;
 
 

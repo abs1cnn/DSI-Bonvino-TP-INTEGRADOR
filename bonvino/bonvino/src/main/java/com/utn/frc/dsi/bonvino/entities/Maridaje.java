@@ -13,9 +13,13 @@ import java.util.List;
 public class Maridaje {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private Integer id;
+
     private String nombre;
+
     private String descripcion;
+
     @ManyToMany(mappedBy = "maridajes")
     private List<Vino> vinos;
 }

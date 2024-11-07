@@ -27,7 +27,7 @@ public class Vino {
     @Column(name = "precioArs")
     private Float precioArs;
     @ManyToOne
-    @Column(name = "idBodega")
+    @JoinColumn(name = "idBodega")
     private Bodega idBodega;
     @ManyToMany
     private List<Varietal> varietales;

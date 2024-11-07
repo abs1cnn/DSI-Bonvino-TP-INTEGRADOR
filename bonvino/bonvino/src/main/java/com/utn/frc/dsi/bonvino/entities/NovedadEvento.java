@@ -24,10 +24,5 @@ public class NovedadEvento {
     private String nombreEvento;
 
     @ManyToMany
-    @JoinTable(
-            name = "BodegasXnovedadEventos",
-            joinColumns = @JoinColumn(name = "idNovedadEvento"),
-            inverseJoinColumns = @JoinColumn(name = "idBogeda")
-    )
     private List<Bodega> bodegas;
 }
