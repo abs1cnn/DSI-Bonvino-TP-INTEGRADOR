@@ -30,10 +30,13 @@ public class Vino {
     @JoinColumn(name = "idBodega")
     private Bodega idBodega;
     @ManyToMany
+    @JoinColumn(name = "id", referencedColumnName = "id")
     private List<Varietal> varietales;
     @ManyToMany
+    @JoinColumn(name = "id", referencedColumnName = "id")
     private List<Maridaje> maridajes;
     @OneToMany
+    @JoinColumn(name = "id", referencedColumnName = "id")
     private List<Resenia> resenias;
 
 }
