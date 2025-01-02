@@ -16,7 +16,7 @@ DOMINIO: Programa de escritorio destinado a la gestion de bodegas.
 | **POSTMAN** | Herramienta para probar y documentar APIs, enviando solicitudes HTTP fácilmente.                     |
 | **JDBC ** | API de Java para conectarse y ejecutar consultas SQL directamente en bases de datos.                                    |
 | **MAEVEN**  | Herramienta de gestión de proyectos y dependencias en Java, que facilita la construcción y el empaquetado.                  |
-| **INTELLINJ IDEA** | Entorno de desarrollo integrado (IDE) para Java y otros lenguajes, desarrollado por JetBrains.           |
+| **INTELLIJ IDEA** | Entorno de desarrollo integrado (IDE) para Java y otros lenguajes, desarrollado por JetBrains.           |
 | **DBeaver** | Herramienta de gestión de bases de datos universal que permite conectarse, administrar y consultar múltiples sistemas de bases de datos           |
 
 ---
