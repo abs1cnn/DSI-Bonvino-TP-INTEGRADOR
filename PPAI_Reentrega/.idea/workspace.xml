@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="690bc1d6-4a96-4238-9d20-93f008b9197b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Boundarys/IObservadorActVino.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Boundarys/ISujetoNotActualizacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseDeDatos/baseDeDatosConexion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/MaridajeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/TipoUvaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/VarietalService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ApiDSI/ApiDSI/bdd.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ApiDSI/ApiDSI/bdd.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ApiDSI/ApiDSI/host.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ApiDSI/ApiDSI/host.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PPAI_Reentrega.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Boundarys/InterfazNotificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Boundarys/InterfazNotificacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Boundarys/InterfazSB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Boundarys/InterfazSB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/Bodega.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clases/Bodega.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/Enofilo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clases/Enofilo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/Maridaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clases/Maridaje.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/RegionVitivinicola.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clases/RegionVitivinicola.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/Resenia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clases/Resenia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/Siguiendo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clases/Siguiendo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/Sommelier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clases/Sommelier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/TipoUva.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clases/TipoUva.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clases/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/Varietal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clases/Varietal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/Vino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clases/Vino.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controladores/ControladorImportarActualizacionVinosBodega.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controladores/ControladorImportarActualizacionVinosBodega.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/PantallaAB/PantallaAB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/PantallaAB/PantallaAB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/views/tablaResumen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/views/tablaResumen.java" afterDir="false" />
+    </list>
+    <list id="28858c07-c635-4ffa-9c22-4973e89ba65f" name="Changes by abs" comment="" />
+    <list id="7d802aef-6051-4abb-ad5c-1002269c21ec" name="Changes by caladux" comment="" />
+    <list id="e209aa41-add1-4c56-9b01-811512b2abf6" name="Changes by Cristian" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/CobroPremium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clases/CobroPremium.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/NovedadEvento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clases/NovedadEvento.java" afterDir="false" />
+    </list>
+    <list id="c8801f69-939c-4116-86da-2f0b2264744e" name="Changes by Mateo Bringas" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Cristulo&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/T154N/TPIFINAL.git&quot;,
+    &quot;accountId&quot;: &quot;5953d712-6305-4e72-81c7-568f45af2104&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3 }</component>
+  <component name="ProjectId" id="2hO6zEbHTaabxsrgeuckjHdgTDV" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.PantallaAB.executor": "Run",
+    "Application.baseDeDatosConexion.executor": "Run",
+    "Application.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/abiga/Desktop/que onda carlo/TPIFINAL/PPAI_Reentrega",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "sql.rename.search.for.storage.occurrences": "true",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Cristian\Desktop\dsi\TPIFINAL\PPAI_Reentrega\src\main\java\baseDeDatos" />
+      <recent name="C:\Users\Cristian\Desktop\dsi\TPIFINAL\PPAI_Reentrega\src\main\resources" />
+      <recent name="C:\Users\Cristian\Desktop\dsi\TPIFINAL\PPAI_Reentrega\src\main\java" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="service" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="690bc1d6-4a96-4238-9d20-93f008b9197b" name="Changes" comment="" />
+      <created>1717453040951</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717453040951</updated>
+      <workItem from="1717453040953" duration="15000" />
+      <workItem from="1717721399788" duration="3425000" />
+      <workItem from="1717812186637" duration="55000" />
+      <workItem from="1718044433683" duration="416000" />
+      <workItem from="1718044858031" duration="655000" />
+      <workItem from="1718039005554" duration="719000" />
+      <workItem from="1718039735412" duration="5765000" />
+      <workItem from="1718170274454" duration="1281000" />
+      <workItem from="1718593423951" duration="617000" />
+      <workItem from="1730853519592" duration="665000" />
+      <workItem from="1730913888925" duration="5152000" />
+      <workItem from="1730926246779" duration="1083000" />
+      <workItem from="1730934045647" duration="1757000" />
+      <workItem from="1731033462084" duration="199000" />
+      <workItem from="1731045548577" duration="65000" />
+      <workItem from="1731170329922" duration="325000" />
+      <workItem from="1731170688105" duration="118000" />
+      <workItem from="1731173050324" duration="356000" />
+      <workItem from="1731174801041" duration="450000" />
+      <workItem from="1731175748086" duration="6069000" />
+      <workItem from="1731183302242" duration="10825000" />
+      <workItem from="1731207521601" duration="7442000" />
+      <workItem from="1731217175817" duration="2753000" />
+      <workItem from="1731244989525" duration="12787000" />
+      <workItem from="1731263456311" duration="8191000" />
+      <workItem from="1731301642307" duration="10694000" />
+      <workItem from="1731354547402" duration="3603000" />
+      <workItem from="1731366500869" duration="2937000" />
+      <workItem from="1731449437494" duration="13120000" />
+      <workItem from="1731473942069" duration="759000" />
+      <workItem from="1731474802131" duration="2044000" />
+      <workItem from="1731476896622" duration="867000" />
+      <workItem from="1731497156284" duration="21737000" />
+      <workItem from="1731862764566" duration="11200000" />
+      <workItem from="1731901039675" duration="10552000" />
+      <workItem from="1731934385182" duration="7979000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

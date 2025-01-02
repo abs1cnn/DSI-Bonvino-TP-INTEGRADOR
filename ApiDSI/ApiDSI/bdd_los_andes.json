@@ -1,0 +1,113 @@
+[
+  {
+      "aniada": 2020,
+      "imagenEtiqueta": "reserva_malbec.png",
+      "nombre": "Reserva Malbec abs",
+      "id_enofilo": 1,
+      "notaDeCataBodega": "Vino con notas de ciruela y mora",
+      "precioARS": 37010,
+      "bodega": {
+          "nombre": "Bodega Los Andes",
+          "coordenadasUbicacion": "37.7749° S, 63.985° W",
+          "descripcion": "Ubicada en el corazón de los Andes<3",
+          "historia": "Fundada en 1950",
+          "periodoActualizacion": 12,
+          "ultimaActualizacion": "2023-10-10"
+      },
+      "resenia": [
+      ],
+      "varietal": [
+          {
+              "descripcion": "Malbec con buen cuerpo y color",
+              "porcentajeComposicion": 5,
+              "tipoUva": {
+                  "descripcion": "Uva de color oscuro, caracterizada por su sabor afrutado",
+                  "nombre": "Malbec"
+              }
+          },
+        
+          {
+              "descripcion": "Cabernet fuerte e intenso",
+              "porcentajeComposicion": 16,
+              "tipoUva": {
+                  "descripcion": "Uva de sabor fuerte, utilizada en muchos vinos tintos",
+                  "nombre": "Cabernet Sauvignon"
+              }
+          },
+          {
+            "descripcion": "Cabernet intenso abss",
+            "porcentajeComposicion": 80,
+            "tipoUva": {
+                "descripcion": "Uva de sabor fuerrrrrrrrrrrte",
+                "nombre": "Cabernet Sauvignon abs"
+            }
+        }
+
+      ],
+      "maridaje": [
+          {
+              "nombre": "Carne Asada",
+              "descripcion": "Perfecto para acompañar carnes rojas a la parrilla"
+          },
+          {
+            "nombre": "Carne Asada abs",
+            "descripcion": "Perfecto para acompañar carnes rojas a la parrilla"
+        }
+      ]
+  },
+{
+  "aniada": 2029,
+  "imagenEtiqueta": "reserva_malbec.png",
+  "nombre": "Reserva Malbec abs x2",
+  "id_enofilo": 1,
+  "notaDeCataBodega": "Vino con notas de pimienta y mora",
+  "precioARS": 90000,
+  "bodega": {
+      "nombre": "Bodega Los Andes",
+      "coordenadasUbicacion": "37.7749° S, 63.985° W",
+      "descripcion": "Ubicada en el corazón de los Andes<3",
+      "historia": "Fundada en 1950",
+      "periodoActualizacion": 12,
+      "ultimaActualizacion": "2023-10-10"
+  },
+  "resenia": [
+  ],
+  "varietal": [
+      {
+          "descripcion": "Malbec abs ahumado con hielo de montaña",
+          "porcentajeComposicion": 5,
+          "tipoUva": {
+              "descripcion": "Uva de color oscuro, caracterizada por su sabor afrutado",
+              "nombre": "Malbec abs"
+          }
+      },
+      {
+          "descripcion": "Cabernet fuerte e intenso",
+          "porcentajeComposicion": 15,
+          "tipoUva": {
+              "descripcion": "Uva de sabor fuerte, utilizada en muchos vinos tintos",
+              "nombre": "Cabernet Sauvignon 2"
+          }
+      },
+      {
+        "descripcion": "Cabernet abss hielo montaña",
+        "porcentajeComposicion": 80,
+        "tipoUva": {
+            "descripcion": "Uva de sabor fuerte, utilizada en muchos vinos tintos",
+            "nombre": "Cabernet Sauvignon"
+        }
+    }
+
+  ],
+  "maridaje": [
+      {
+          "nombre": "Carne Asada",
+          "descripcion": "Perfecto para acompañar carnes rojas a la parrilla"
+      },
+      {
+        "nombre": "Carne Asada abs hielo montaña",
+        "descripcion": "Perfecto para acompañar carnes rojas a la parrilla"
+    }
+  ]
+}
+]

@@ -1,0 +1,254 @@
+[
+  {
+    "aniada": 2018,
+    "imagenEtiqueta": "url_de_imagen",
+    "nombre": "Vino 1b1",
+    "notaDeCataBodega": "Nota de Cata 1",
+    "precioARS": 12000.0,
+    "bodega": {
+      "coordenadasUbicacion": "5.0000,10.0000",
+      "descripcion": "Descripcion de la Bodega",
+      "historia": "Historia de la Bodega",
+      "nombre": "Bodega 1",
+      "periodoActualizacion": null,
+      "ultimaActualizacion": null
+    },
+    "resenia": [
+      {
+        "comentario": "Excelente vino",
+        "esPremium": true,
+        "fechaResenia": "2024-06-13T00:00:00.000+00:00",
+        "puntaje": 8,
+        "vino": null
+      }
+    ],
+    "varietal": [
+      {
+        "descripcion": "Varietal Vino 1",
+        "porcentajeComposicion": 80.0,
+        "tipoUva": {
+          "descripcion": "Descripcion del tipo de uva Malbec",
+          "nombre": "Malbec"
+        }
+      },
+      {
+        "descripcion": "Varietal Vino 1",
+        "porcentajeComposicion": 20.0,
+        "tipoUva": {
+          "descripcion": "Descripcion del tipo de uva Merlot",
+          "nombre": "Merlot"
+        }
+      }
+    ],
+    "maridaje": [
+      {
+        "nombre": "Carne Asada",
+        "descripcion": "Perfecto para carne asada"
+      }
+    ]
+  },
+  {
+    "aniada": 2019,
+    "imagenEtiqueta": "url_de_imagen_2",
+    "nombre": "Vino Teka 2",
+    "notaDeCataBodega": "Nota de Cata 2",
+    "precioARS": 15000.0,
+    "bodega": {
+      "coordenadasUbicacion": "5.0000,10.0000",
+      "descripcion": "Descripcion de la Bodega",
+      "historia": "Historia de la Bodega",
+      "nombre": "Bodega 1",
+      "periodoActualizacion": null,
+      "ultimaActualizacion": null
+    },
+    "resenia": [
+      {
+        "comentario": "Muy buen vino",
+        "esPremium": false,
+        "fechaResenia": "2024-06-14T00:00:00.000+00:00",
+        "puntaje": 7,
+        "vino": null
+      }
+    ],
+    "varietal": [
+      {
+        "descripcion": "Varietal Vino 2",
+        "porcentajeComposicion": 60.0,
+        "tipoUva": {
+          "descripcion": "Descripcion del tipo de uva Cabernet Sauvignon",
+          "nombre": "Cabernet Sauvignon"
+        }
+      },
+      {
+        "descripcion": "Varietal Vino 2",
+        "porcentajeComposicion": 40.0,
+        "tipoUva": {
+          "descripcion": "Descripcion del tipo de uva Syrah",
+          "nombre": "Syrah"
+        }
+      }
+    ],
+    "maridaje": [
+      {
+        "nombre": "Quesos",
+        "descripcion": "Ideal con una tabla de quesos"
+      }
+    ]
+  },
+  {
+    "aniada": 2000,
+    "imagenEtiqueta": "url_de_imagen_3",
+    "nombre": "Vino Teka 3",
+    "notaDeCataBodega": "Nota de Cata 3",
+    "precioARS": 13000.0,
+    "bodega": {
+      "coordenadasUbicacion": "5.0000,10.0000",
+      "descripcion": "Descripcion de la Bodega",
+      "historia": "Historia de la Bodega",
+      "nombre": "Bodega 1",
+      "periodoActualizacion": null,
+      "ultimaActualizacion": null
+    },
+    "resenia": [
+      {
+        "comentario": "Vino decente",
+        "esPremium": true,
+        "fechaResenia": "2024-06-15T00:00:00.000+00:00",
+        "puntaje": 6,
+        "vino": null
+      }
+    ],
+    "varietal": [
+      {
+        "descripcion": "Varietal Vino 3",
+        "porcentajeComposicion": 70.0,
+        "tipoUva": {
+          "descripcion": "Descripcion del tipo de uva Pinot Noir",
+          "nombre": "Pinot Noir"
+        }
+      },
+      {
+        "descripcion": "Varietal Vino 3",
+        "porcentajeComposicion": 30.0,
+        "tipoUva": {
+          "descripcion": "Descripcion del tipo de uva Tempranillo",
+          "nombre": "Tempranillo"
+        }
+      }
+    ],
+    "maridaje": [
+      {
+        "nombre": "Pasta",
+        "descripcion": "Acompaña bien a pastas con salsa roja"
+      }
+    ]
+  },
+  {
+    "aniada": 2022,
+    "imagenEtiqueta": "url_de_imagen_5",
+    "nombre": "Vino Teka 4",
+    "notaDeCataBodega": "Nota de Cata 5",
+    "precioARS": 16000.0,
+    "bodega": {
+      "coordenadasUbicacion": "5.0000,10.0000",
+      "descripcion": "Descripcion de la Bodega",
+      "historia": "Historia de la Bodega",
+      "nombre": "Bodega 1",
+      "periodoActualizacion": null,
+      "ultimaActualizacion": null
+    },
+    "resenia": [
+      {
+        "comentario": "Muy bueno",
+        "esPremium": false,
+        "fechaResenia": "2024-06-17T00:00:00.000+00:00",
+        "puntaje": 7,
+        "vino": null
+      }
+    ],
+    "varietal": [
+      {
+        "descripcion": "Varietal Vino 5",
+        "porcentajeComposicion": 90.0,
+        "tipoUva": {
+          "descripcion": "Descripcion del tipo de uva Chardonnay",
+          "nombre": "Chardonnay"
+        }
+      },
+      {
+        "descripcion": "Varietal Vino 5",
+        "porcentajeComposicion": 10.0,
+        "tipoUva": {
+          "descripcion": "Descripcion del tipo de uva Riesling",
+          "nombre": "Riesling"
+        }
+      }
+    ],
+    "maridaje": [
+      {
+        "nombre": "Ensaladas",
+        "descripcion": "Ideal para ensaladas frescas"
+      }
+    ]
+  },
+  {
+    "aniada": 2000,
+    "imagenEtiqueta": "url_de_imagen_5",
+    "nombre": "Vino Teka 5",
+    "notaDeCataBodega": "Nota de Cata 5",
+    "precioARS": 16000.0,
+    "bodega": {
+      "coordenadasUbicacion": "5.0000,10.0000",
+      "descripcion": "Descripcion de la Bodega",
+      "historia": "Historia de la Bodega",
+      "nombre": "Bodega 1",
+      "periodoActualizacion": null,
+      "ultimaActualizacion": null
+    },
+    "resenia": [
+      {
+        "comentario": "Muy bueno",
+        "esPremium": false,
+        "fechaResenia": "2024-06-17T00:00:00.000+00:00",
+        "puntaje": 7,
+        "vino": null
+      }
+    ],
+    "varietal": [
+      {
+        "descripcion": "Varietal Vino 5",
+        "porcentajeComposicion": 90.0,
+        "tipoUva": {
+          "descripcion": "Descripcion del tipo de uva Verde",
+          "nombre": "Verde"
+        }
+      },
+      {
+        "descripcion": "Varietal Vino 5",
+        "porcentajeComposicion": 10.0,
+        "tipoUva": {
+          "descripcion": "Descripcion del tipo de uva Tempranillo",
+          "nombre": "Tempranillo"
+        }
+      }
+    ],
+    "maridaje": [
+      {
+        "nombre": "Pescado",
+        "descripcion": "Ideal para Pescados"
+      },
+      {
+        "nombre": "Arroz",
+        "descripcion": "Excelente para platos de arroz"
+      },
+      {
+        "nombre": "Empanadas",
+        "descripcion": "Excelente para comer empanadas"
+      },
+      {
+        "nombre": "Ensaladas",
+        "descripcion": "Ideal para ensaladas frescas"
+      }
+    ]
+  }
+]
