@@ -12,6 +12,8 @@ Notifica a los enofios que siguen las bodegas seleccionadas, quese ha actualizad
 ![image](https://github.com/user-attachments/assets/c0a63e22-32f9-4af7-8e03-ee24e41acd07)
 Muestra por pantalla los vinos actualizados o creados y que bodegas no se pudo realizar la conexion
 ![image](https://github.com/user-attachments/assets/87414856-6049-4167-bd99-c79df78855e8)
+Consola intellig
+![image](https://github.com/user-attachments/assets/b3e5eedb-b637-4d9d-9ef6-d2cb2720106f)
 
 
 ### **Tecnologías Usadas**
