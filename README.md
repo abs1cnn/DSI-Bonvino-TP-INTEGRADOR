@@ -15,7 +15,7 @@ Muestra por pantalla los vinos actualizados o creados y que bodegas no se pudo r
 Consola intellig
 ![image](https://github.com/user-attachments/assets/b3e5eedb-b637-4d9d-9ef6-d2cb2720106f)
 
-
+---
 ### **Tecnologías Usadas**
 
 | Tecnología  | Descripción                                                             |
