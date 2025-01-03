@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "host.js",
   "scripts": {
+    "start": "node host.js",
+    "dev": "nodemon host.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,5 +14,8 @@
   "dependencies": {
     "express": "^4.19.2",
     "fs": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
   }
 }

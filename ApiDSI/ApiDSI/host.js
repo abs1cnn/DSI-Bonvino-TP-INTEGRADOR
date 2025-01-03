@@ -12,4 +12,4 @@ else { const jsonData = JSON.parse(data); res.json(jsonData); } }); });
 app.get('/Bodega-2', (req, res) => { fs.readFile('./bdd1.json', 'utf8', (err, data) => { if (err) { console.error(err); res.status(500).send('Internal Server Error'); }
 else { const jsonData = JSON.parse(data); res.json(jsonData); } }); });
 
-app.listen(8080, () => { console.log('Server is running on port 8080'); });
+app.listen(8080, () => { console.log('Server is running on port 8080. http://localhost:8080/ http://localhost:8080/Bodega-Los-Andes http://localhost:8080/Bodega-1 http://localhost:8080/Bodega-2'); });
