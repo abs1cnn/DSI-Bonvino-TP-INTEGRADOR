@@ -35,14 +35,9 @@ public class ControladorImportarActualizacionVinosBodega implements ISujetoNotAc
 	private ArrayList<Maridaje> maridajesList;
 	private ArrayList<TipoUva> tipoUvaList;
 	private ArrayList<Varietal> varietalsList;
-	private ArrayList<Usuario> listaUsuario;
 	private ArrayList<Enofilo> listaEnofilos;
-	private ArrayList<Siguiendo> Listasiguiendo;
 	private ArrayList<Vino> vinosParaActualizar;
-
-	// ARRAY DE NOMBRES DE USUARIOS QUE SIGUEAN A LA BODEGA XX
-	private ArrayList<String> nombresDeUsuariosSeguidores;
-	//---------------------------------------------------------------------
+	private Map<Vino, ArrayList<String>> mapVinoNombreUsuarioEnofilos;
 	private final List<IObservadorActVino> observadores = new ArrayList<>();
 
 	//---------------------------------------------------------------------
@@ -71,7 +66,6 @@ public class ControladorImportarActualizacionVinosBodega implements ISujetoNotAc
 		this.tipoUvaList = tipoUvaService.obtenerTiposUva();
 		//this.Listasiguiendo = siguiendoService.obtenerSeguidoresPorEnofilo();
 		this.listaEnofilos = enofiloService.obtenerEnofilos();
-		this.listaUsuario = new ArrayList<>();
 		this.varietalsList = varietalService.obtenerVarietales();
 	}
 
@@ -84,27 +78,34 @@ public class ControladorImportarActualizacionVinosBodega implements ISujetoNotAc
 
 	@Override
 	public void suscribir(ArrayList<IObservadorActVino> obs) {
-		for (IObservadorActVino observador : observadores ){
+		for (IObservadorActVino observador : obs ){
 			observadores.add(observador);
 		}
 	}
 
 	@Override
-	public void quitar(IObservadorActVino observador) {
-		observadores.remove(observador);
+	public void quitar(ArrayList<IObservadorActVino> observador) {
+		for (IObservadorActVino obs : observador){
+			observadores.remove(obs);
+		}
 	}
 
 	@Override
-	public void notificarObservadores(String nombreBodega, Integer aniada, String nombreVino, String notaDeCataBodega, double precioARS, ArrayList<String> nombresDeUsuariosSeguidores) {
+	public void notificar(List<String> nombresBodegas,
+						  List<Integer> aniadas,
+						  List<String> nombresVinos,
+						  List<String> notasDeCata,
+						  List<Double> preciosARS,
+						  List<List<String>> enofilos) {
 		for (IObservadorActVino observador : observadores) {
-			observador.notificarActualizacion(nombreBodega, aniada, nombreVino, notaDeCataBodega, precioARS, nombresDeUsuariosSeguidores);
+			observador.notificarActualizacion(nombresBodegas, aniadas, nombresVinos, notasDeCata, preciosARS, enofilos);
 		}
 	}
 
 
 	// ---------------------------------------------------------------------
 	/*
-		notificarObservadores(); // tenemos que agregar esta linea cuando se produzca la actualizacion
+		notificar(); // tenemos que agregar esta linea cuando se produzca la actualizacion
 	}*/
 
 	//---------------------------------------------------------------------
@@ -145,6 +146,7 @@ public class ControladorImportarActualizacionVinosBodega implements ISujetoNotAc
 		boolean notificacion = false;
 		ArrayList<ArrayList<String>> vinosPantalla = new ArrayList<>();
 		ArrayList<String> bodegasActualizadas = new ArrayList<>();
+		mapVinoNombreUsuarioEnofilos = new HashMap<>();
 
 		for (String nombreBodegaSeleccionada : nombresBodegaSeleccionadas) {
 			for (Bodega bodegaBDD : this.listaBodegas) {
@@ -247,24 +249,39 @@ public class ControladorImportarActualizacionVinosBodega implements ISujetoNotAc
 				ArrayList<String> nombresDeUsuariosSeguidores;
 				// Validar que sean bodegas actualizadas
 				nombresDeUsuariosSeguidores = buscarSeguidoresBodega(nombreBodegaSeleccionada); // Array Strings de Usuarios
-				System.out.println("((((((((((((((((((((((((((((((((");
-				System.out.println("Encontrados para la bodega: " + nombreBodegaSeleccionada);
-				System.out.println(nombresDeUsuariosSeguidores);
-				System.out.println("((((((((((((((((((((((((((((((((");
 
-				/////////////////////////////////////////7
-				// LLAMAR AL ENGANCHE
-				// NOTIFICAR()
+				for (Vino vino : vinosParaActualizar) {
+					ArrayList<String> enofilos = new ArrayList<>();
+					for (String nombreUsuario : nombresDeUsuariosSeguidores) {
+						for (Enofilo enofilo : listaEnofilos) {
+							if (enofilo.getNombreUsuario().equals(nombreUsuario)) {
+								enofilos.add(enofilo.getNombreUsuario());
+							}
+						}
+					}
+					System.out.println("Se notifico a los usuarios: " + enofilos);
+					this.mapVinoNombreUsuarioEnofilos.put(vino, enofilos);
+				}
 
 
-				notificar(nombresDeUsuariosSeguidores, vinosParaActualizar);
-
-				//interfazNotificacion.notificarNovedadVino(nombresDeUsuariosSeguidores, nombreBodegaSeleccionada);
-				nombresDeUsuariosSeguidores.clear();
 				notificacion = true;
+				for (Bodega bodega : listaBodegas){
+					if (bodega.getNombreBodega().equals(nombreBodegaSeleccionada)){
+						bodega.setUltimaActualizacion(LocalDate.now().toString());
+						System.out.println("........................................................................................................................................................................................");
+						System.out.println("Se actualizo la bodega " + bodega.getNombreBodega() + " con la fecha " + bodega.getUltimaActualizacion());
+						//bodegaService.actualizarBodega(bodega);
+					}
+
+				}
+
 			}
 
+
+
 		}
+		notificarActVino();
+
 		if (notificacion) {
 
 			// ACA HACER
@@ -283,7 +300,6 @@ public class ControladorImportarActualizacionVinosBodega implements ISujetoNotAc
 				// agregar a un array para mostrar el resumen
 			}
 		}
-		notificarObservadores();
 		return false;
 	}
 
@@ -342,28 +358,38 @@ public class ControladorImportarActualizacionVinosBodega implements ISujetoNotAc
 
 	// ------------------------------------------------------------------------------------------------------------------------------------
 
-	public void notificar(ArrayList<String> nombreUsuariosNotificar, ArrayList<Vino> vinosParaActualizar){
+	public void notificarActVino() {
 		ArrayList<IObservadorActVino> arrayObservadores = new ArrayList<>();
-
 		InterfazNotificacion interfazNotificacion = new InterfazNotificacion();
 		arrayObservadores.add(interfazNotificacion);
 
 		// Aca se pueden agregar mas boundarys para actualizar
-
 		suscribir(arrayObservadores);
 
-		for (Vino vino : vinosParaActualizar) {
-			notificarObservadores(
-					vino.getBodega().getNombreBodega(),
-					vino.getAniada(),
-					vino.getNombre(),
-					vino.getNotaDeCataBodega(),
-					vino.getPrecioARS(),
-					nombreUsuariosNotificar
-			);
+		// Listas para acumular los datos
+		List<String> nombresBodegas = new ArrayList<>();
+		List<Integer> aniadas = new ArrayList<>();
+		List<String> nombresVinos = new ArrayList<>();
+		List<String> notasDeCata = new ArrayList<>();
+		List<Double> preciosARS = new ArrayList<>();
+		List<List<String>> enofilosPorVino = new ArrayList<>(); // Lista de listas para los enófilos
+
+		// Recolectar datos
+		for (Map.Entry<Vino, ArrayList<String>> entry : this.mapVinoNombreUsuarioEnofilos.entrySet()) {
+			Vino vino = entry.getKey();
+			nombresBodegas.add(vino.getBodega().getNombreBodega());
+			aniadas.add(vino.getAniada());
+			nombresVinos.add(vino.getNombre());
+			notasDeCata.add(vino.getNotaDeCataBodega());
+			preciosARS.add(vino.getPrecioARS());
+			enofilosPorVino.add(entry.getValue());
 		}
 
+		//Llamar al metodo notificar
+		notificar(nombresBodegas, aniadas, nombresVinos, notasDeCata, preciosARS, enofilosPorVino);
 	}
+
+
 
 	// ------------------------------------------------------------------------------------------------------------------------------------
 	// finCU

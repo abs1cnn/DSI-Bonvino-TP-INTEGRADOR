@@ -1,16 +1,26 @@
 package Boundarys;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class InterfazNotificacion implements IObservadorActVino {
 
 	@Override
-	public void notificarActualizacion(String nombreBodega, Integer aniada, String nombreVino, String notaDeCataBodega, Double precioARS, ArrayList<String> nombreUsuariosNotificar) {
-		System.out.println("---------------------------------------------------------------------------------------");
-		System.out.println("Se actualizo el vino: " + nombreVino + " de la bodega: " + nombreBodega);
-		System.out.println("Añada: " + aniada);
-		System.out.println("Nota de cata: " + notaDeCataBodega);
-		System.out.println("Precio: " + precioARS);
+	public void notificarActualizacion(List<String> nombresBodegas,
+									   List<Integer> aniadas,
+									   List<String> nombresVinos,
+									   List<String> notasDeCata,
+									   List<Double> preciosARS,
+									   List<List<String>> enofilosPorVino) {
+
+		for (int i = 0; i < nombresVinos.size(); i++) {
+			String cuerpoMensaje = "Se ha actualizado el vino " + nombresVinos.get(i) + " de la bodega " + nombresBodegas.get(i) + " del año " + aniadas.get(i) + " con la siguiente nota de cata: "
+					+ notasDeCata.get(i) + " y un precio de " + preciosARS.get(i) + "ARS";
+
+			for (String usuario : enofilosPorVino.get(i)) {
+				notificarNovedadVino(usuario, cuerpoMensaje);
+			}
+		}
+
 	}
 
 
@@ -27,11 +37,8 @@ public class InterfazNotificacion implements IObservadorActVino {
 	}
 
 
-	public void notificarNovedadVino(ArrayList<String> nombresDeUsuariosSeguidores, String bodega) {
+	public void notificarNovedadVino(String nombresDeUsuariosSeguidores, String cuerpo) {
 		System.out.println("---------------------------------------------------------------------------------------");
-		System.out.println("Envio de notificaciones de la bodega:" + bodega);
-		for (String usuario : nombresDeUsuariosSeguidores) {
-			System.out.println("Se le envio la notificacion al usuario: " + usuario);
-		}
+		System.out.println("Se ha notificado a " + nombresDeUsuariosSeguidores + " la siguiente novedad: " + cuerpo);
 	}
 }

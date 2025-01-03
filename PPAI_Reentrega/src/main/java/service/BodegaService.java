@@ -66,6 +66,24 @@ public class BodegaService {
     }
 
 
+    public void actualizarBodega(Bodega bod){
+
+        String query = "UPDATE bodegas SET coordenadas = ?, descripcion = ?, historia = ?, periodo_actualizacion = ?, ultima_actualizacion = ? WHERE nombre_bodega = ?";
+        try (Connection conn = DriverManager.getConnection(url);
+             PreparedStatement pstmt = conn.prepareStatement(query)) {
+            pstmt.setString(1, bod.getCoordenadasUbicacion());
+            pstmt.setString(2, bod.getDescripcion());
+            pstmt.setString(3, bod.getHistoria());
+            pstmt.setInt(4, bod.getPeriodoActualizacion());
+            pstmt.setString(5, bod.getUltimaActualizacion());
+            pstmt.setString(6, bod.getNombreBodega());
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+    }
+
+    }
+
     public boolean actualizarVino(Vino vino) {
 
         String nombreVino = vino.getNombre();
