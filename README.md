@@ -2,7 +2,8 @@
   - MATERIA: DISEÑO DE SISTEMAS DE LA INFORMACION
   - PROPIETARIOS: ARIAS SANTIAGO - BRINGAS MATEO - CANAAN ABIGAIL - CASTRO CRISTIAN - LADUX CARLOS
 
-DOMINIO: Programa de escritorio destinado a la gestion de bodegas.
+DESCRIPCION: Producto de software completo y funcional para escritorio. Trabajo integrador de catedra “Diseño de sistemas”.  Partiendo de un enunciado, casos de uso y requerimientos (tanto funcionales, como no funcionales). El grupo desarrollo los diagramas UML correspondientes para el flujo de los procesos.  Scrum y Git.
+Programado en Java, usando Intellij IDEA y NetBeans. La lógica del programa fue desarrollada bajo un enfoque MVC (Modelo-Vista-Controlador). .
 
 ---
 ![image](https://github.com/user-attachments/assets/53fa9d67-baac-4896-bb74-5c4a37875206)
