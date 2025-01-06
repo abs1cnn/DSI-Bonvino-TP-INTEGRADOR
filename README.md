@@ -2,13 +2,15 @@
   - MATERIA: DISEÑO DE SISTEMAS DE LA INFORMACION
   - PROPIETARIOS: ARIAS SANTIAGO - BRINGAS MATEO - CANAAN ABIGAIL - CASTRO CRISTIAN - LADUX CARLOS
 
-DESCRIPCION: Producto de software completo y funcional para escritorio. Trabajo integrador de catedra “Diseño de sistemas”.  Partiendo de un enunciado, casos de uso y requerimientos (tanto funcionales, como no funcionales). El grupo desarrollo los diagramas UML correspondientes para el flujo de los procesos. 
-El caso de uso correspondiente es el numero 5. 
-Al usuario se le mostraran las bodegas con periodo de actualizaciones disponibles** y el seleccionara las que desea que se actualicen, el gestor es el que gestiona los procesos. 
-Se consumira una API externa que contenia informacion de los vinos a crear o actualizar Corresponidentes de las bodegas seleccionadas. Cada API correspondia a una bodega diferente.
-Se realiza una busqueda por PK compuesta del vino (noombre vino y añada). Si se encuentra en labase de datos, se gestiona el setteo de valores de los atributos de la instancia vino a actualizar. Si el vino no existe en la base de datos, se lo debe crear, asegurandose antes de la existencia de las clases que estan reacionadas con la instanvia vino (Ejemplo, asegurarse que exista clase Varietas, Uva, Maridaje), luego persistir.
-Luego de actualizar la bodega corresctamente, se le setea la fecha de ultima actualizacion con la fecha de ese momento.
-Se genera una tabla mostrando los vinos que se crearon/actualizaron con sus datos correspondientes. A su vez en la parte inferior se muestra las bodegas seleccionadas con las que no se pudo realizar la conexion con la API.
+DESCRIPCION: 
+Producto de software completo y funcional para escritorio. Trabajo integrador de catedra “Diseño de sistemas”.  Partiendo de un enunciado, casos de uso y requerimientos (tanto funcionales, como no funcionales). El grupo desarrollo los diagramas UML correspondientes para el flujo de los procesos. 
+
+El caso de uso correspondiente es el numero 5.
+- Al usuario se le mostraran las bodegas con periodo de actualizaciones disponibles** y el seleccionara las que desea que se actualicen, el gestor es el que gestiona los procesos. 
+- Se consumira una API externa que contenia informacion de los vinos a crear o actualizar Corresponidentes de las bodegas seleccionadas. Cada API correspondia a una bodega diferente.
+- Se realiza una busqueda por PK compuesta del vino (noombre vino y añada). Si se encuentra en labase de datos, se gestiona el setteo de valores de los atributos de la instancia vino a actualizar. Si el vino no existe en la base de datos, se lo debe crear, asegurandose antes de la existencia de las clases que estan reacionadas con la instanvia vino (Ejemplo, asegurarse que exista clase Varietas, Uva, Maridaje), luego persistir.
+- Luego de actualizar la bodega corresctamente, se le setea la fecha de ultima actualizacion con la fecha de ese momento.
+- Se genera una tabla mostrando los vinos que se crearon/actualizaron con sus datos correspondientes. A su vez en la parte inferior se muestra las bodegas seleccionadas con las que no se pudo realizar la conexion con la API.
 
 ** para que una bodega se le muestre para actualizar, debe cumplir (desde los datos de la bodega) este en periodo. Ejemplo: "Bodega Los anndes" actualizada el 3 de octubre del 2025, la bodega se actualiza cada 2 meses. dia actual 20 de noviembre. La bodega no se mostrara en el listado de las bodegas que cumplen con periodo para actualizar.
 ---
